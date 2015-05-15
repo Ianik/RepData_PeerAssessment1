@@ -55,10 +55,20 @@ hist(aggregate_data$steps, main = "Histogram of Number of Steps per Day",
 
 ```r
 ## Calculate Mean
-mu<-mean(aggregate_data$steps,na.rm=TRUE)
+print(mu<-mean(aggregate_data$steps,na.rm=TRUE))
+```
 
+```
+## [1] 9354.23
+```
+
+```r
 ## Calculate Median
-med<-median(aggregate_data$steps,na.rm=TRUE)
+print(med<-median(aggregate_data$steps,na.rm=TRUE))
+```
+
+```
+## [1] 10395
 ```
 The Mean is **9354.2295082**.
 
@@ -187,16 +197,26 @@ hist(aggregate_newdata$steps, main = "Histogram of Number of Steps per Day (New 
 
 ```r
 ## Calculate Mean
-new_mu<-mean(aggregate_newdata$steps,na.rm=TRUE)
+print(new_mu<-mean(aggregate_newdata$steps,na.rm=TRUE))
+```
 
+```
+## [1] 10766.19
+```
+
+```r
 ## Calculate Median
-new_med<-median(aggregate_newdata$steps,na.rm=TRUE)
+print(new_med<-median(aggregate_newdata$steps,na.rm=TRUE))
+```
+
+```
+## [1] 10766.19
 ```
 The new Mean is **1.0766189\times 10^{4}**.
 
 The new Median is **1.0766189\times 10^{4}**.
 
-####*Changing the data increased the frequency of days with steps close to a value of 10,766 which the mean and median value.  See on the histogram the frenquency of days with steps between 10,000 and 15,000 is higher.*
+####*Changing the data increased the frequency of days with steps close to a value of 10,766 which is the mean and median value.  See on the histogram the frenquency of days with steps between 10,000 and 15,000 is higher.*
 
 ##Are there differences in activity patterns between weekdays and weekends?
 
